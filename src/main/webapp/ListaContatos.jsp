@@ -18,9 +18,9 @@
 				E-mail: ${list.email }
 				${list.favorito }</p>
 				
-				<p><a href=""> Editar</a>
-				<a href=""> Excluir</a>
-				</p>
+					<p><a href=""> Editar</a>
+					<a href="/AgendaTelefonica_JavaServlet/entrada?acao=DeletaContato&id=${list.id }"> Excluir</a>
+					</p>
 				</li>
 			</c:forEach>
 		</ol>

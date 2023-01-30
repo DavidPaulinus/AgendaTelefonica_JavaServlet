@@ -9,6 +9,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import br.com.agendaTelefonica.Acao.CadastraContato;
+import br.com.agendaTelefonica.Acao.DeletaContato;
 import br.com.agendaTelefonica.Acao.ListaContatos;
 
 @WebServlet("/entrada")
@@ -23,6 +24,9 @@ public class Program extends HttpServlet{
 		}
 		if(param.equals("ListaContatos")) {
 			new ListaContatos().executar(request,response);
+		}
+		if(param.equals("DeletaContato")){
+			new DeletaContato().executar(request, response);
 		}
 	}
 }
