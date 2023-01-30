@@ -6,7 +6,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<title>Lista de Contatos</title>
 </head>
 <body>
 	<h1>Contatos: </h1>

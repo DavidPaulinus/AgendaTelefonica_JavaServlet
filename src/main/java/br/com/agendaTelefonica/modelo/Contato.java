@@ -1,6 +1,6 @@
 package br.com.agendaTelefonica.modelo;
 
-public class Contato {
+public class Contato{
 	private Long id;
 	private String nome;
 	private String numero;
@@ -15,6 +15,15 @@ public class Contato {
 	public Contato(Long id, String nome, String numero, String tipo, String email, Boolean favorito) {
 		super();
 		this.id = id;
+		this.nome = nome;
+		this.numero = numero;
+		this.tipo = tipo;
+		this.email = email;
+		this.favorito = favorito;
+	}
+	
+	public Contato(String nome, String numero, String tipo, String email, Boolean favorito) {
+		super();
 		this.nome = nome;
 		this.numero = numero;
 		this.tipo = tipo;

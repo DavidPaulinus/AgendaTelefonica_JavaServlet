@@ -8,7 +8,7 @@ import javax.servlet.http.HttpServletResponse;
 
 public interface Execucao {
 
-	String executar(HttpServletRequest req, HttpServletResponse resp)
+	void executar(HttpServletRequest req, HttpServletResponse resp)
 			throws ServletException, IOException;
 
 }

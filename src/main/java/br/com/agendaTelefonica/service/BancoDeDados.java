@@ -17,6 +17,7 @@ public class BancoDeDados {
 	}
 
 	public void salvar(Contato contt) {
+		contt.setId(chaveSequencial++);
 		listContt.add(contt);
 	}
 
