@@ -12,17 +12,21 @@
 	<h1>Contatos: </h1>
 		<ol>
 			<c:forEach items = "${lista }" var = "list">
-				<li><p>Nome:  ${list.nome }
+				<p>
+				Nome:  ${list.nome }
 				Número: ${list.numero }
 				Tipo:   ${list.tipo }
 				E-mail: ${list.email }
-				${list.favorito }</p>
+				${list.favorito }
+				</p>
 				
-					<p><a href=""> Editar</a>
+				<p><a href="/AgendaTelefonica_JavaServlet/entrada?acao=EditaContato&id=${list.id }"> Editar</a>
 					<a href="/AgendaTelefonica_JavaServlet/entrada?acao=DeletaContato&id=${list.id }"> Excluir</a>
-					</p>
-				</li>
+				</p>
+				
+				
 			</c:forEach>
 		</ol>
+		<a href = "/AgendaTelefonica_JavaServlet/cadastro">Novo Contato</a>
 </body>
 </html>

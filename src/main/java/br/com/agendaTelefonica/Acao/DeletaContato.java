@@ -18,7 +18,7 @@ public class DeletaContato implements Execucao {
 
 		resp.sendRedirect("entrada?acao=ListaContatos");
 
-		System.out.println("/Deletado contato");
+		System.out.println("/Deletado Contato");
 
 	}
 

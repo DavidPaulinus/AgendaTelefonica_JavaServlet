@@ -8,6 +8,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import br.com.agendaTelefonica.Acao.AchaContato;
+import br.com.agendaTelefonica.Acao.AlteraContato;
 import br.com.agendaTelefonica.Acao.CadastraContato;
 import br.com.agendaTelefonica.Acao.DeletaContato;
 import br.com.agendaTelefonica.Acao.ListaContatos;
@@ -27,6 +29,12 @@ public class Program extends HttpServlet{
 		}
 		if(param.equals("DeletaContato")){
 			new DeletaContato().executar(request, response);
+		}
+		if(param.equals("EditaContato")) {
+			new AchaContato().executar(request, response);
+		}
+		if(param.equals("AlteraContato")) {
+			new AlteraContato().executar(request, response);
 		}
 	}
 }
